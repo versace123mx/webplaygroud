@@ -21,6 +21,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),# si se le pone delante path('core', include('core.urls')) en el path esto quiere decir que para acceder tiene que ser core/about ejemplo
+    path('pages/', include('pages.urls')),# si se le pone delante path('core', include('core.urls')) en el path esto quiere decir que para acceder tiene que ser core/about ejemplo
 ]
 
 if settings.DEBUG:
